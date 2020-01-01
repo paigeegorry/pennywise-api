@@ -1,0 +1,39 @@
+{
+  "name": "stephen-king-api",
+  "version": "1.0.0",
+  "description": "WIP Stephen King RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "drop": "mongo dragonAge --eval 'db.dropDatabase()'",
+    "db-load-all": "npm run drop && npm run seed",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js",
+    "seed": "node seed.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paigeegorry/stephen-king-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paigeegorry/stephen-king-api/issues"
+  },
+  "homepage": "https://github.com/paigeegorry/stephen-king-api#readme",
+  "devDependencies": {
+    "chalk": "^3.0.0",
+    "eslint": "^6.8.0",
+    "node-html-parser": "^1.1.16",
+    "nodemon": "^2.0.2",
+    "superagent": "^5.1.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
