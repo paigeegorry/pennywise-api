@@ -1,2 +1,2 @@
-# stephen-king-api
-WIP Stephen King RESTful API
+# pennywise-api
+WIP Stephen King's IT RESTful API
